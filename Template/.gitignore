@@ -1,0 +1,16 @@
+# Build files
+build/
+cmake-build-*/
+.vs/
+x64/
+Debug/
+Release/
+
+# Compiled files
+*.exe
+*.obj
+*.o
+*.pdb
+
+# Local configuration
+*.user

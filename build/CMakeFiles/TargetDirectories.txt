@@ -1,0 +1,3 @@
+C:/Users/user/Downloads/lab 2 template final/build/CMakeFiles/OpenGLGame.dir
+C:/Users/user/Downloads/lab 2 template final/build/CMakeFiles/edit_cache.dir
+C:/Users/user/Downloads/lab 2 template final/build/CMakeFiles/rebuild_cache.dir

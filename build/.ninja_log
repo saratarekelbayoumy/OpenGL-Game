@@ -1,0 +1,7 @@
+# ninja log v7
+62	919	8138656255800323	CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj	718902d55d079ad1
+54	971	8138656255730375	CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj	cc50e590420f9667
+973	1172	8138656264914876	OpenGLGame.exe	7b31fb0349aa3dee
+48	851	8138665418804277	CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj	718902d55d079ad1
+38	919	8138665418715016	CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj	cc50e590420f9667
+919	1094	8138665427518330	OpenGLGame.exe	7b31fb0349aa3dee

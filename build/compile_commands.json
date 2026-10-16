@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/user/Downloads/lab 2 template final/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL -I\"C:/Users/user/Downloads/lab 2 template final/Template\" -I\"C:/Users/user/Downloads/lab 2 template final/Template/include\" -I\"C:/Users/user/Downloads/lab 2 template final/Template/External\" -g -std=gnu++17 -o CMakeFiles\\OpenGLGame.dir\\Template\\main.cpp.obj -c \"C:\\Users\\user\\Downloads\\lab 2 template final\\Template\\main.cpp\"",
+  "file": "C:/Users/user/Downloads/lab 2 template final/Template/main.cpp",
+  "output": "C:/Users/user/Downloads/lab 2 template final/build/CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/Downloads/lab 2 template final/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DGLFW_DLL -I\"C:/Users/user/Downloads/lab 2 template final/Template\" -I\"C:/Users/user/Downloads/lab 2 template final/Template/include\" -I\"C:/Users/user/Downloads/lab 2 template final/Template/External\" -g -o CMakeFiles\\OpenGLGame.dir\\Template\\src\\glad.c.obj -c \"C:\\Users\\user\\Downloads\\lab 2 template final\\Template\\src\\glad.c\"",
+  "file": "C:/Users/user/Downloads/lab 2 template final/Template/src/glad.c",
+  "output": "C:/Users/user/Downloads/lab 2 template final/build/CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj"
+}
+]

@@ -21,6 +21,7 @@ extern int coins;
 extern bool selectedLanes[3];
 extern int selectionOrder[3];
 extern int selectionCounter;
+extern int meleePurchased;
 
 struct Player {
     bool active;

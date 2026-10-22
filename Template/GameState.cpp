@@ -9,7 +9,8 @@ float cardX[3] = { -0.7f, -0.3f, 0.1f };
 int hoveredLane = -1;
 int hoveredCard = -1;
 int placementLane = -1;
-int coins = 30;
+int coins = 50;
+int meleePurchased = 0;
 bool selectedLanes[3] = { false, false, false };
 int selectionOrder[3] = { 0, 0, 0};
 int selectionCounter = 0;
@@ -42,6 +43,11 @@ void placePlayer(GLFWwindow* window, int type){
         return;
     }
 
+    if(meleePurchased < 3 && type != MELEE){
+        std::cout << "purchase 3 melee players first\n";
+        return;
+    }
+
     if (placementLane == -1) {
         std::cout << "Select a lane first.\n";
         return;
@@ -63,6 +69,13 @@ void placePlayer(GLFWwindow* window, int type){
             players[i].firstAttackPending = type != DEFENSE;
             players[i].attacksThisFrame = 0;
             coins -= PLAYER_COST;
+
+            if(type == MELEE && meleePurchased < 3){
+                meleePurchased++;
+            }
+            if(meleePurchased ==3){
+            std::cout << "ranged and defense unlocked!\n";}
+
 
             if (coins < PLAYER_COST)
                 hoveredCard = -1;

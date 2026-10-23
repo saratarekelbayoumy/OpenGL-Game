@@ -24,7 +24,7 @@ void drawButton(
         0, y, .64f, .16f,
         hovered ? .30f : .20f,
         hovered ? .43f : .29f,
-        hovered ? .63f : .44f;
+        hovered ? .63f : .44f
      );
 
      drawText(
@@ -101,7 +101,7 @@ void resetGame(){
 
  void drawMenu(GLint locTransform,GLint locTint)
  {
-    glm::mat4 identity = glm:mat4(1);
+    glm::mat4 identity = glm::mat4(1);
 
     drawRectangle(
         locTransform, locTint, identity,0, .03f, 1.48f, 1.08f, .60f,.48f,.23f);

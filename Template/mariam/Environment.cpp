@@ -88,7 +88,7 @@ ModelPart bannerParts[] = { {0,.012f,.055f,.024f,0,.38f,.40f,.45f},
     void drawEnvironment(GLint locTransform, GLint locTint) {
         glm::mat4 identity = glm::mat4(1);
 
-        drawRectangle(locTransform, locTint, identity,-10f, -895f, 1.60f,.17f,.28f,.30f,.35f);
+        drawRectangle(locTransform, locTint, identity,.10f, -.895f, 1.60f,.17f,.28f,.30f,.35f);
 
         for (int row =0; row <2; row++) {
             for (int column =0; column < 12; column++) {
@@ -114,7 +114,7 @@ ModelPart bannerParts[] = { {0,.012f,.055f,.024f,0,.38f,.40f,.45f},
     }
 
     for (int cap = 0; cap < 10; cap++) {
-        drawRectangle(locTransform, locTint, identity, -.62f + cap * .16f, -.811f, -.153f, .026f, .66f, .69f ,.74f);
+        drawRectangle(locTransform, locTint, identity, -.62f + cap * .16f, -.811f, .153f, .026f, .66f, .69f ,.74f);
 
     }
 
@@ -144,17 +144,16 @@ ModelPart bannerParts[] = { {0,.012f,.055f,.024f,0,.38f,.40f,.45f},
             x = decoration == 6 ? -.10f : decoration == 7 ? .43f : .78f;
         }
 
-       glm mat4 parent = glm::translate(identity, glm::vec3(x, -.985f,0));
+       glm::mat4 parent = glm::translate(identity, glm::vec3(x, -.985f,0));
 
         drawParts(locTransform, locTint, parent, parts, count);
 
         if (decoration == 2 || decoration == 3) {
 
             float phase = gameTime * 7 + decoration;
-            float height = .050f + .10f * (float)std::sin(phase);
+            float height = .050f + .010f * (float)std::sin(phase);
             float width = .028f + .004f * (float)std::sin(phase +1);
-            float width = .028f + .004f * (float)std::sin(phase + 1);
-            float lean = 99 * (float)std::sin(phase * .70f);
+            float lean = 8 * (float)std::sin(phase * .70f);
 
             glm::mat4 flame = glm::translate(parent, glm::vec3(.025f, .145f,0));
 
@@ -193,12 +192,14 @@ ModelPart bannerParts[] = { {0,.012f,.055f,.024f,0,.38f,.40f,.45f},
                 for(int row = 0; row < 9; row++) {
                    drawRectangle( locTransform,locTint, castle , 
                     tower == 0? -.068f : .068f,
-                    -.54f + row * .14f, .054f,.005f, .40f , .43f, .50f );
+                    -.57f + row * .14f, .054f,.005f, .40f , .43f, .50f );
 
                    }
                 }
 
             }
+
+
         
 
                 

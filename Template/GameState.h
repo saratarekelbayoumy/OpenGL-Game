@@ -1,4 +1,11 @@
+
+#pragma once
+
+
 #include <GLFW/glfw3.h>
+
+
+
 
 extern int g_screenWidth;
 extern int g_screenHeight;

@@ -4,7 +4,12 @@
 # include "GameState.h"
 #include "Renderer.h"
 #include "Input.h"
-
+#include "Enemies.h"
+#include "Combat.h"
+#include "Projectiles.h"
+#include "Collectibles.h"
+#include "Waves.h"
+#include "mariam/GameShared.h"
 
 int main()
 {
@@ -54,12 +59,32 @@ int main()
         float currentFrame = (float)glfwGetTime();
         float deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+      if(currentScreen== PLAYING){
+         updateWaves(window, deltaTime);
+         resolveEncountrs();
+      updatePlayers(deltaTime);
+      updateEnemies(deltaTime);
+      resolveEncountrs();
+      updateCombat();
+      updateEnemyAttacks(deltaTime);
+      updateHardAttacks(deltaTime);
+      updateProjectiles(deltaTime);
+      checkProjectileHits();
+      updateCollectibles();
+      checkGameOutcome(window);
 
-        updatePlayers(deltaTime);
         printPlayerAttacks();
+      }
         drawScene(renderer);
+        if(currentScreen== PLAYING || currentScreen== PAUSED || currentScreen== WIN || currentScreen== LOSE){
+          drawEnemies(renderer.locTransform, renderer.locTint);
+          drawProjectiles(renderer.locTransform, renderer.locTint);
+          drawProjectiles(renderer.locTransform, renderer.locTint);
+
+        }
         glfwSwapBuffers(window);
         glfwPollEvents();
+      
     }
 
     destroyRenderer(renderer);

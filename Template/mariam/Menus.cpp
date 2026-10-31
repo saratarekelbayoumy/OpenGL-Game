@@ -1,5 +1,9 @@
 #include "Menus.h"
 #include "UI.h"
+#include "Template/Enemies.h"
+#include "Template/Projectiles.h"
+#include "Template/Collectibles.h"
+#include "Template/Waves.h"
 
 bool insideButton(float x, float y, float centerY){
     return x >= -.32f && x<= .32f && y >= centerY - .08f && y <= centerY+ .08f;
@@ -58,6 +62,7 @@ void resetGame(){
     players[i] = Player{};
 
     coins = 30;
+     meleePurchased = 0;
     gameTime=0;
     cutsceneTime = 0;
     selectionCounter=0;
@@ -69,6 +74,18 @@ void resetGame(){
         selectedLanes[i] = false;
         selectionOrder[i] = 0;
     }
+    for(int i =0; i<MAX_ENEMIES; i++){ 
+      enemies[i]=Enemy{};
+    }
+    for(int i=0; i<MAX_PROJECTILES ; i++){
+      projectiles[i]= Projectile{};
+    }
+    for(int i=0; i<MAX_COLLECTIBLES; i++){
+        collectibles[i]= Collectible{};
+    }
+    currentWave=1;
+    spawnedInWave;
+    spawnTimer=0.0f;
     }
 
     void startGame(GLFWwindow* window)

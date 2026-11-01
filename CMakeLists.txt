@@ -15,6 +15,11 @@ add_executable(OpenGLGame
         Template/GameState.cpp
     Template/Input.cpp
     Template/Renderer.cpp
+    Template/Enemies.cpp
+Template/Combat.cpp
+Template/Projectiles.cpp
+Template/Collectibles.cpp
+Template/Waves.cpp
 )
 
 target_include_directories(OpenGLGame PRIVATE

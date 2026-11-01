@@ -1,4 +1,5 @@
 #pragma once 
+#include <glm/glm.hpp>
 
 const int EASY = 0;
 const int MEDIUM = 1;
@@ -24,3 +25,7 @@ void spawnEnemyType(int type);
 void updateEnemies(float dt);
 bool anyEnemiesAlive();
 void damageEnemy(int index, int damage);
+void drawEasyEnemy(GLint locTransform, GLint locTint, float x, float feetY, float weaponAngle, float damageScale);
+void drawMediumEnemy(GLint locTransform, GLint locTint, float x, float feetY, float weaponAngle, float damageScale);
+void drawHardEnemy(GLint locTransform, GLint locTint, float x, float feetY, float axeAngle, float damageScale);
+void drawEnemies(GLint locTransform, GLint locTint);

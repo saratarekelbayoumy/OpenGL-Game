@@ -1,6 +1,6 @@
 #pragma once
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
+#include <glad/glad.h>
+
 
 const int MAX_PROJECTILES = 100;
 const int HIGH_ATTACK = 0;
@@ -18,10 +18,8 @@ struct Projectile {
 };
 extern Projectile projectiles[MAX_PROJECTILES];
 
-void spawnEnemyProjectile(int lane, float x, int attackKind) ;
-    
+void spawnEnemyProjectile(int lane, float x, int attackKind) ;   
 void spawnPlayerProjectile(int lane, float x) ;
-    
 void updateProjectiles(float dt);
-
 void drawProjectiles(GLint locTransform, GLint locTint);
+

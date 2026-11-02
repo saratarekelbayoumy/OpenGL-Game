@@ -429,6 +429,43 @@ void drawPlayers(const Renderer& renderer) {
 
 }
 
+void drawRectangle(
+    GLint locTransform,
+    GLint locTint,
+    const glm::mat4& parent,
+    float x, float y,
+    float width, float height,
+    float red, float green, float blue,
+    float angle)
+{
+    glm::mat4 transform =
+        glm::translate(parent, glm::vec3(x, y, 0.0f));
+
+    transform = glm::rotate(
+        transform,
+        glm::radians(angle),
+        glm::vec3(0.0f, 0.0f, 1.0f)
+    );
+
+    transform = glm::scale(
+        transform,
+        glm::vec3(width, height, 1.0f)
+    );
+
+    glUniformMatrix4fv(
+        locTransform,
+        1,
+        GL_FALSE,
+        glm::value_ptr(transform)
+    );
+
+    glUniform4f(locTint, red, green, blue, 1.0f);
+
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+}
+
+
+
 void drawScene(const Renderer &renderer){
     glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);

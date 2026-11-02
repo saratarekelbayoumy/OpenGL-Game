@@ -61,10 +61,10 @@ int main()
         lastFrame = currentFrame;
       if(currentScreen== PLAYING){
          updateWaves(window, deltaTime);
-         resolveEncountrs();
+         resolveEncounters();
       updatePlayers(deltaTime);
       updateEnemies(deltaTime);
-      resolveEncountrs();
+      resolveEncounters();
       updateCombat();
       updateEnemyAttacks(deltaTime);
       updateHardAttacks(deltaTime);
@@ -79,7 +79,7 @@ int main()
         if(currentScreen== PLAYING || currentScreen== PAUSED || currentScreen== WIN || currentScreen== LOSE){
           drawEnemies(renderer.locTransform, renderer.locTint);
           drawProjectiles(renderer.locTransform, renderer.locTint);
-          drawProjectiles(renderer.locTransform, renderer.locTint);
+          drawCollectible(renderer.locTransform, renderer.locTint);
 
         }
         glfwSwapBuffers(window);

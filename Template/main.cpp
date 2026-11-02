@@ -10,6 +10,10 @@
 #include "Collectibles.h"
 #include "Waves.h"
 #include "mariam/GameShared.h"
+#include "mariam/Environment.h"
+#include "mariam/Menus.h"
+#include "mariam/Cutscene.h"
+
 
 int main()
 {
@@ -59,6 +63,11 @@ int main()
         float currentFrame = (float)glfwGetTime();
         float deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+        
+if (currentScreen== CUTSCENE) {
+    updateCutscene(window, deltaTime);
+}
+
       if(currentScreen== PLAYING){
          updateWaves(window, deltaTime);
          resolveEncounters();
@@ -75,13 +84,50 @@ int main()
 
         printPlayerAttacks();
       }
-        drawScene(renderer);
+
+      
+static int previousScreen= -1;
+
+if (currentScreen !=previousScreen) {
+    std::cout << "Current screen: " << currentScreen << std::endl;
+    previousScreen= currentScreen;
+}
+
+       
+if (currentScreen == MAIN_MENU) {
+    glClearColor(0.1f,0.1f,0.15f,1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(renderer.shaderProgram);
+    glBindVertexArray(renderer.VAO);
+    drawEnvironment(renderer.locTransform, renderer.locTint);
+    drawMenu(renderer.locTransform, renderer.locTint);
+}
+
+else if (currentScreen== CUTSCENE) {
+    glClearColor(0.1f,0.1f,0.15f,1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(renderer.shaderProgram);
+    glBindVertexArray(renderer.VAO);
+    drawCutscene(renderer);
+}
+
+else {
+    drawScene(renderer);
+}
+
         if(currentScreen== PLAYING || currentScreen== PAUSED || currentScreen== WIN || currentScreen== LOSE){
           drawEnemies(renderer.locTransform, renderer.locTint);
           drawProjectiles(renderer.locTransform, renderer.locTint);
-          drawCollectible(renderer.locTransform, renderer.locTint);
+          drawCollectibles(renderer.locTransform, renderer.locTint);
 
         }
+        
+     if (currentScreen== PAUSED ||
+    currentScreen== WIN ||
+    currentScreen== LOSE) {
+    drawMenu(renderer.locTransform, renderer.locTint);
+}
+
         glfwSwapBuffers(window);
         glfwPollEvents();
       

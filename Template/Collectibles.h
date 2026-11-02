@@ -15,4 +15,4 @@ struct Collectible {
 extern Collectible collectibles[MAX_COLLECTIBLES];
 void spawnCollectible(int lane, float x);
 void updateCollectibles();
-void drawCollectible(GLint locTransform, GLint locTint);
+void drawCollectibles(GLint locTransform, GLint locTint);

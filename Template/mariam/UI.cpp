@@ -1,6 +1,6 @@
 #include "UI.h"
 #include <glm/gtc/matrix_transform.hpp>
-
+#include "../Input.h"
 
 bool digitSegments[10][7] = {
     {1,1,1,1,1,1,0},
@@ -103,9 +103,9 @@ void drawGameplay(GLint locTransform, GLint locTint){
             !available ? .35f : hovered ? .85f : .65f 
         );
 
-        drawCharacter(
+        /*drawCharacter(
             locTransform, locTint, type, cardX[type], .745f, .65f, .85f, 0, !available
-        );
+        );*/
 
     
 
@@ -167,8 +167,8 @@ void drawGameplay(GLint locTransform, GLint locTint){
 
                 float fraction = (float)players[i].health / players[i].maxHealth;
 
-                drawCharacter(
-                    locTransform, locTint,players[i].type, players[i].x, feetY, .40f + .60f* fraction, players[i].ducking ? .50f : 1.0f, players[i].attackTime / ATTACK_DURATION, false);
+                 /* drawCharacter(
+                    locTransform, locTint,players[i].type, players[i].x, feetY, .40f + .60f* fraction, players[i].ducking ? .50f : 1.0f, players[i].attackTime / ATTACK_DURATION, false); */
 
                 }
 
@@ -224,8 +224,44 @@ void drawGameplay(GLint locTransform, GLint locTint){
                         }
                     }
                 }
+
+
+                
+void drawParts(
+    GLint locTransform, GLint locTint,
+    const glm::mat4& parent,
+    ModelPart* parts, int count, bool grayscale)
+{
+    for (int i = 0; i < count; i++) {
+        float red =parts[i].red;
+        float green =parts[i].green;
+        float blue =parts[i].blue;
+
+        if (grayscale)
+            red =green= blue = (red + green + blue) / 3;
+
+        drawRectangle(
+            locTransform, locTint, parent,
+            parts[i].x, parts[i].y,
+            parts[i].width, parts[i].height,
+            red, green, blue, parts[i].angle
+        ); }}
+
             
-            
+           
+void refreshHover()
+{
+    hoveredLane =-1;
+    hoveredCard =-1;
+
+    if (currentScreen == PLAYING) {
+        hoveredLane =getLane(mouseX, mouseY);
+
+        if (coins >= PLAYER_COST)
+            hoveredCard =getCard(mouseX, mouseY);
+    }
+}
+ 
                     
 
                 

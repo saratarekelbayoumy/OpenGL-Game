@@ -1,5 +1,7 @@
 #include "Input.h"
 #include "GameState.h"
+#include "mariam/Menus.h"
+#include "mariam/Cutscene.h"
 
 
 
@@ -70,37 +72,72 @@ void cursor_position_callback(GLFWwindow* window, double xpos, double ypos) {
 }
 
 
-void mouse_button_callback(GLFWwindow* window, int button, int action, int mods) {
+
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
     if (button != GLFW_MOUSE_BUTTON_LEFT || action != GLFW_PRESS)
         return;
 
     double xpos, ypos;
-    glfwGetCursorPos(window, &xpos, &ypos);
-    float mouseX, mouseY; 
-    
-    if (!getMousePosition(window, xpos, ypos, mouseX, mouseY)) {
+    glfwGetCursorPos(window,&xpos,&ypos);
+
+    if (!getMousePosition(window, xpos, ypos, mouseX, mouseY))
+        return; 
+        if (currentScreen== MAIN_MENU) {
+        if (insideButton(mouseX, mouseY,0.02f))
+            beginCutscene(window);
+        else if (insideButton(mouseX, mouseY,-0.20f))
+            glfwSetWindowShouldClose(window, true);
+
         return;
     }
 
+    
+    if (currentScreen== PAUSED) {
+        if (insideButton(mouseX,mouseY, 0.15f)) {
+            currentScreen = PLAYING;
+            refreshHover();
+            updateWindowTitle(window);
+        }
+        else if (insideButton(mouseX,mouseY,-0.07f))
+            startGame(window);
+        else if (insideButton(mouseX,mouseY,-0.29f))
+            returnToMainMenu(window);
+
+        return;
+    }
+
+
+    if (currentScreen== WIN || currentScreen== LOSE) {
+        if (insideButton(mouseX, mouseY,0.02f))
+            startGame(window);
+        else if (insideButton(mouseX, mouseY,-0.20f))
+            returnToMainMenu(window);
+
+        return;}
+
+    
+    if (currentScreen != PLAYING)
+        return;
+
     int card = getCard(mouseX, mouseY);
-    if (card != -1){
+
+    if (card != -1) {
         placePlayer(window, card);
         return;
     }
 
-    int lane = getLane(mouseX, mouseY);
+    int lane= getLane(mouseX, mouseY);
+
     if (lane != -1) {
-        selectedLanes[lane] = !selectedLanes[lane];
-        if (selectedLanes[lane]){
+        selectedLanes[lane]= !selectedLanes[lane];
+
+        if (selectedLanes[lane]) {
             selectionCounter++;
-            selectionOrder[lane] = selectionCounter;
+            selectionOrder[lane]= selectionCounter;
+        }updatePlacementLane();
+    }refreshHover();}
 
-        }
-
-        updatePlacementLane();
-    }
-    
-}
 
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {

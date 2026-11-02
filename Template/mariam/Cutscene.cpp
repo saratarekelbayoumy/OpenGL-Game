@@ -7,6 +7,17 @@
 
 #include <cmath>
 
+#include "../Renderer.h"
+
+
+void drawCharacter(
+    const Renderer& renderer,
+    int type, float x, float feetY,
+    float damageScale, float heightScale,
+    float attackProgress, bool grayscale
+);
+
+
 
 ModelPart cutsceneRaiderParts[] = {
     {-.030f,.013f,.043f,.026f,0,.20f,.16f,.12f},
@@ -65,7 +76,11 @@ ModelPart cutsceneRaiderParts[] = {
           drawRectangle(locTransform, locTint,axe,.020f,.077f,.062f,.037f,.69f,.69f,.66f,-15);
           drawRectangle(locTransform, locTint,axe,.042f,.083f,.016f,.044f,.88f,.86f,.79f,-15);}
 
-          void drawCutscene(GLint locTransform, GLint locTint) {
+          
+void drawCutscene(const Renderer& renderer) {
+    GLint locTransform =renderer.locTransform;
+    GLint locTint =renderer.locTint;
+
               glm::mat4 identity = glm::mat4(1);
 
               float t = cutsceneTime;
@@ -134,11 +149,11 @@ ModelPart cutsceneRaiderParts[] = {
                 float guardX = -.72f + .16f * u;
                 float bob = .004f * (float)std::sin(u * 24);
                 
-                drawCharacter(locTransform, locTint, RANGED,archerX, -.43f + bob , 1.8f,1,0,false);
-                drawCharacter(locTransform, locTint, DEFENSE, guardX, -.43f , 1.8f ,1,0,false);
+                drawCharacter(renderer, RANGED,archerX, -.43f + bob , 1.8f,1,0,false);
+                drawCharacter(renderer, DEFENSE, guardX, -.43f , 1.8f ,1,0,false);
             }
 
-            drawCharacter(locTransform, locTint, MELEE, knightX, knightY, 1.8f, 1, knightAttack, false);
+            drawCharacter(renderer, MELEE, knightX, knightY, 1.8f, 1, knightAttack, false);
 
             if (t >= 4)
                 drawCutsceneRaider(locTransform, locTint, raiderX, raiderY, axeAngle);

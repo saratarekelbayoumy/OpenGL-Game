@@ -38,7 +38,7 @@ void updateCollectibles() {
     }
 }
 
-void drawCollectibles(GLint locTransform, GLint locTint) {
+void drawCollectible(GLint locTransform, GLint locTint) {
     for (int i = 0; i < MAX_COLLECTIBLES; i++) {
     if(!collectibles[i].active) 
         continue;

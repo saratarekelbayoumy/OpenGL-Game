@@ -4,24 +4,19 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <string>
-
 #include "../GameState.h"
+#include "../Renderer.h"
 
-const int MAIN_MENU = 0;
-const int PLAYING = 1;
-const int PAUSED = 2;
-const int WIN = 3;
-const int LOSE = 4;
-const int CUTSCENE = 5;
+const int MAIN_MENU =0;
+const int PLAYING =1;
+const int PAUSED =2;
+const int WIN =3;
+const int LOSE =4;
+const int CUTSCENE =5;
 
 const float CUTSCENE_DURATION = 16.0f;
 
-struct ModelPart {
-    float x, y;
-    float width, height;
-    float angle;
-    float red, green, blue;
-};
+
 
 extern int g_screenWidth;
 extern int g_screenHeight;
@@ -55,13 +50,11 @@ void drawRectangle(
 );
 
 void drawParts(
-    GLint locTransform, GLint locTint,
-    const glm::mat4& parent,
+    GLint locTransform, GLint locTint,const glm::mat4& parent,
     ModelPart* parts, int count, bool grayscale = false
 );
 
-void drawCharacter(
-    GLint locTransform, GLint locTint,
+void drawCharacter( GLint locTransform, GLint locTint,
     int type, float x, float feetY,
     float damageScale, float heightScale,
     float attackProgress, bool grayscale

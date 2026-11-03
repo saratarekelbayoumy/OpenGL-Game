@@ -1,3 +1,4 @@
+#include <glad/glad.h>
 #include "Combat.h"
 #include "GameState.h"
 #include "Enemies.h"
@@ -158,10 +159,12 @@ void checkProjectileHits() {
         }
     if (projectiles[s].attackKind == HIGH_ATTACK) {
         if (players[target].ducking)
-            continue;
+           
+            continue; 
     }
     if (projectiles[s].attackKind == LOW_ATTACK) {
         if (players[target].jumping)
+           
             continue;
     }
 	damagePlayer(target, projectiles[s].damage);

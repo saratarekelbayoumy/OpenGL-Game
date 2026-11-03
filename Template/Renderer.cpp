@@ -5,17 +5,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <cmath>
-
-struct ModelPart{
-    float x;
-    float y;
-    float width;
-    float height;
-    float angle;
-    float red;
-    float green;
-    float blue;
-};
+#include "mariam/Environment.h"
+#include "mariam/UI.h"
 
 
 ModelPart meleeParts[] = {
@@ -464,6 +455,46 @@ void drawRectangle(
     glDrawArrays(GL_TRIANGLES, 0, 6);
 }
 
+void drawParts(
+    GLint locTransform, GLint locTint,
+    const glm::mat4& parent,
+    ModelPart* parts, int count, bool grayscale)
+{
+    for (int i = 0; i < count; i++) {
+        float red =parts[i].red;
+        float green =parts[i].green;
+        float blue =parts[i].blue;
+
+        if (grayscale)
+            red =green=blue = (red + green + blue) / 3;
+        drawRectangle(
+            locTransform, locTint, parent,
+            parts[i].x, parts[i].y,
+            parts[i].width, parts[i].height,
+            red, green, blue, parts[i].angle
+        );}}
+    
+   void drawCharacter(
+    GLint locTransform, GLint locTint,
+    int type, float x, float feetY,
+    float damageScale, float heightScale,
+    float attackProgress, bool grayscale)
+{
+    Renderer sharedRenderer{};
+
+    sharedRenderer.locTransform =locTransform;
+    sharedRenderer.locTint =locTint;
+
+    GLint boundVAO =0;
+    glGetIntegerv(GL_VERTEX_ARRAY_BINDING, &boundVAO);
+    sharedRenderer.VAO = static_cast<GLuint>(boundVAO);
+
+    drawCharacter(
+        sharedRenderer, type, x, feetY,
+        damageScale, heightScale,
+        attackProgress, grayscale
+    );}
+
 
 
 void drawScene(const Renderer &renderer){
@@ -471,9 +502,8 @@ void drawScene(const Renderer &renderer){
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(renderer.shaderProgram);
     glBindVertexArray(renderer.VAO);
-    drawLanes(renderer);
-    drawCards(renderer);
-    drawPlayers(renderer);
+    drawEnvironment(renderer.locTransform, renderer.locTint);
+    drawGameplay(renderer.locTransform, renderer.locTint);
 }
 
 

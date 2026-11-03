@@ -5,6 +5,12 @@
 #include "Template/Collectibles.h"
 #include "Template/Waves.h"
 
+int currentScreen = MAIN_MENU;
+float gameTime =0.0f;
+float cutsceneTime =0.0f;
+float mouseX =-2.0f;
+float mouseY =-2.0f;
+
 bool insideButton(float x, float y, float centerY){
     return x >= -.32f && x<= .32f && y >= centerY - .08f && y <= centerY+ .08f;
 
@@ -35,33 +41,12 @@ void drawButton(
         locTransform, locTint, label,
         0, y, .010f, .95f, .93f,.85f );}
          
-        void updateWindowTitle(GLFWwindow* window){
-            std::string title = "Castle Gate Defenders";
-            if(currentScreen == MAIN_MENU)
-            title += " | Main Menu";
-            else if ( currentScreen == PAUSED)
-            title +=" | Paused";
-
-            else if (currentScreen == WIN)
-             title += " | Victory";
-
-             else if (currentScreen == LOSE)
-             title += " | Defeat";
-
-             else if (currentScreen == CUTSCENE)
-             title += " | The Castle Gate";
-
-             else 
-             title += " | Coins: " + std::to_string(coins)
-             + " | Test cost: 10 | W/S: dodge | H/B: test | F1/F2: outcome";
-
-             glfwSetWindowTitle(window, title.c_str());
-        }
+        
 void resetGame(){
     for (int i = 0; i< MAX_PLAYERS;i++)
     players[i] = Player{};
 
-    coins = 30;
+    coins =30;
      meleePurchased = 0;
     gameTime=0;
     cutsceneTime = 0;
@@ -84,7 +69,7 @@ void resetGame(){
         collectibles[i]= Collectible{};
     }
     currentWave=1;
-    spawnedInWave;
+    spawnedInWave=0;
     spawnTimer=0.0f;
     }
 

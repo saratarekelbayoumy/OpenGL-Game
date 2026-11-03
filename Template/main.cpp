@@ -10,6 +10,8 @@
 #include "Collectibles.h"
 #include "Waves.h"
 #include "mariam/GameShared.h"
+#include "mariam/Menus.h"
+#include "mariam/Cutscene.h"
 
 int main()
 {
@@ -59,7 +61,11 @@ int main()
         float currentFrame = (float)glfwGetTime();
         float deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+        if (currentScreen ==CUTSCENE) {
+    updateCutscene(window, deltaTime);
+}
       if(currentScreen== PLAYING){
+          gameTime += deltaTime;
          updateWaves(window, deltaTime);
          resolveEncounters();
       updatePlayers(deltaTime);
@@ -76,12 +82,33 @@ int main()
         printPlayerAttacks();
       }
         drawScene(renderer);
-        if(currentScreen== PLAYING || currentScreen== PAUSED || currentScreen== WIN || currentScreen== LOSE){
-          drawEnemies(renderer.locTransform, renderer.locTint);
-          drawProjectiles(renderer.locTransform, renderer.locTint);
-          drawCollectible(renderer.locTransform, renderer.locTint);
+        
+if (currentScreen ==MAIN_MENU || currentScreen ==CUTSCENE) {
 
-        }
+    glClearColor(0.1f,0.1f,0.15f,1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(renderer.shaderProgram);
+    glBindVertexArray(renderer.VAO);
+    if (currentScreen == MAIN_MENU) {
+        drawMenu(renderer.locTransform, renderer.locTint);}
+    else {
+        drawCutscene(renderer.locTransform, renderer.locTint);
+    }}
+   else {
+    drawScene(renderer);
+    drawEnemies(renderer.locTransform, renderer.locTint);
+    drawProjectiles(renderer.locTransform, renderer.locTint);
+    drawCollectible(renderer.locTransform, renderer.locTint);
+
+    if (currentScreen ==PAUSED ||
+        currentScreen ==WIN ||
+        currentScreen ==LOSE) {
+
+        drawMenu(renderer.locTransform, renderer.locTint);
+    }}
+
+
+
         glfwSwapBuffers(window);
         glfwPollEvents();
       

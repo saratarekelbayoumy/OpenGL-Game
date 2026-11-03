@@ -92,7 +92,7 @@ void drawGameplay(GLint locTransform, GLint locTint){
     drawRectangle(locTransform, locTint, identity, 0,.80f,2, .30f, .20f, .23f, .30f);
 
     for (int type = 0; type < 3; type++) { 
-        bool available = coins >= PLAYER_COST;
+        bool available = coins >= PLAYER_COST && (type == MELEE || meleePurchased >=3);
         bool  hovered = available && hoveredCard == type;
 
         drawRectangle(

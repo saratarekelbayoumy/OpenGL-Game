@@ -1,5 +1,8 @@
+#include "mariam/GameShared.h"
 #include "Input.h"
 #include "GameState.h"
+#include "mariam/Menus.h"
+#include "mariam/Cutscene.h"
 
 
 
@@ -47,6 +50,9 @@ int getCard(float mouseX, float mouseY) {
     }
 
     for (int i = 0; i < 3; ++i) {
+
+         if(coins < PLAYER_COST || (i != MELEE && meleePurchased <3))
+        continue;
         if (mouseX >= cardX[i] - 0.15f && mouseX <= cardX[i] + 0.15f) {
             return i;
         }
@@ -57,16 +63,25 @@ int getCard(float mouseX, float mouseY) {
     return -1; 
 }
 
+void refreshHover() {
+    hoveredLane =-1;
+    hoveredCard =-1;
+
+    if (currentScreen == PLAYING) {
+        hoveredLane =getLane(mouseX, mouseY);
+        if (coins >= PLAYER_COST)
+            hoveredCard =getCard(mouseX, mouseY);
+    }} 
+
+
 void cursor_position_callback(GLFWwindow* window, double xpos, double ypos) {
-    float mouseX, mouseY;
+    
     if (!getMousePosition(window, xpos, ypos, mouseX, mouseY)) {
         hoveredLane = -1;
         hoveredCard = -1;
         return;
     }
-
-    hoveredLane = getLane(mouseX, mouseY);
-    hoveredCard = coins >= PLAYER_COST ? getCard(mouseX, mouseY) : -1;
+refreshHover();
 }
 
 
@@ -81,6 +96,49 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
     if (!getMousePosition(window, xpos, ypos, mouseX, mouseY)) {
         return;
     }
+    if (currentScreen == MAIN_MENU) {
+    if (insideButton(mouseX, mouseY,0.02f)) {
+        beginCutscene(window);}
+    else if (insideButton(mouseX, mouseY,-0.20f)) {
+        glfwSetWindowShouldClose(window, GLFW_TRUE);}
+    return;}
+
+    
+if (currentScreen==PAUSED){
+   //cont
+    if(insideButton(mouseX,mouseY,0.15f)) {
+        currentScreen =PLAYING;
+        refreshHover();
+        updateWindowTitle(window);}
+
+    //res
+    else if(insideButton(mouseX, mouseY,-0.07f)) {
+        startGame(window);}
+//main menu
+    else if(insideButton(mouseX, mouseY,-0.29f)) {
+        returnToMainMenu(window);}
+     return;}
+
+     if (currentScreen==WIN || currentScreen==LOSE){
+     //res
+    if (insideButton(mouseX,mouseY,0.02f)) {
+        startGame(window);}
+    //main menu
+    else if (insideButton(mouseX,mouseY,-0.20f)){
+        returnToMainMenu(window);}
+
+    return;}
+
+
+     
+if (currentScreen !=PLAYING) {
+    return;}
+    
+
+
+if (currentScreen != PLAYING) {
+    return;
+}
 
     int card = getCard(mouseX, mouseY);
     if (card != -1){
@@ -105,8 +163,23 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
     if (action != GLFW_PRESS)
+        return; 
+        //ESC toggles between playing and pause
+if (key ==GLFW_KEY_ESCAPE) {
+    if (currentScreen ==PLAYING) {
+        currentScreen =PAUSED;
+    }
+    else if (currentScreen ==PAUSED) {
+        currentScreen =PLAYING;
+    }
+
+    refreshHover();
+    updateWindowTitle(window);
+    return;}
+
+    if (currentScreen != PLAYING){
         return;
-    
+    }
 
     // temp for testing 
     if (key == GLFW_KEY_H || key == GLFW_KEY_B) {
@@ -130,11 +203,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
             }
         }
 
-        return;
-    } 
+        return; } 
 
-    bool jumpKey = (key == GLFW_KEY_W );
-    bool duckKey = (key == GLFW_KEY_S);
+    bool jumpKey = (key == GLFW_KEY_W  || key==GLFW_KEY_UP);
+    bool duckKey = (key == GLFW_KEY_S || key ==GLFW_KEY_DOWN);
 
     if (!jumpKey && !duckKey)
         return;

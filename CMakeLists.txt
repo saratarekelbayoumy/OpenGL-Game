@@ -20,12 +20,22 @@ Template/Combat.cpp
 Template/Projectiles.cpp
 Template/Collectibles.cpp
 Template/Waves.cpp
+
+Template/mariam/Environment.cpp
+Template/mariam/UI.cpp
+Template/mariam/Menus.cpp
+Template/mariam/Cutscene.cpp
+
+
+
+
+
 )
 
-target_include_directories(OpenGLGame PRIVATE
+target_include_directories(OpenGLGame PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
     Template
     Template/include
-    Template/External
+    Template/External/include
 )
 
 target_link_libraries(OpenGLGame PRIVATE

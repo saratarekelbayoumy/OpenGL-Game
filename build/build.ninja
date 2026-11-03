@@ -54,7 +54,7 @@ build CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj: CXX_COMPILER__OpenGLGame_
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -64,7 +64,7 @@ build CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj: C_COMPILER__OpenGLGame_
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\src\glad.c.obj.d
   FLAGS = -g
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\src
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -74,7 +74,7 @@ build CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj: CXX_COMPILER__OpenGL
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\GameState.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -84,7 +84,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj: CXX_COMPILER__OpenGLGame
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Input.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -94,7 +94,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj: CXX_COMPILER__OpenGLG
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Renderer.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -104,7 +104,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj: CXX_COMPILER__OpenGLGa
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Enemies.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -114,7 +114,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj: CXX_COMPILER__OpenGLGam
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Combat.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -124,7 +124,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj: CXX_COMPILER__Open
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Projectiles.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -134,7 +134,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj: CXX_COMPILER__Ope
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Collectibles.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -144,9 +144,49 @@ build CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj: CXX_COMPILER__OpenGLGame
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Waves.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
+  TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
+
+build CMakeFiles/OpenGLGame.dir/Template/mariam/Environment.cpp.obj: CXX_COMPILER__OpenGLGame_unscanned_Debug C$:/Users/user/Downloads/lab$ 2$ template$ final/Template/mariam/Environment.cpp || cmake_object_order_depends_target_OpenGLGame
+  CONFIG = Debug
+  DEFINES = -DGLFW_DLL
+  DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\Environment.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  OBJECT_DIR = CMakeFiles\OpenGLGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
+  TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
+
+build CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj: CXX_COMPILER__OpenGLGame_unscanned_Debug C$:/Users/user/Downloads/lab$ 2$ template$ final/Template/mariam/UI.cpp || cmake_object_order_depends_target_OpenGLGame
+  CONFIG = Debug
+  DEFINES = -DGLFW_DLL
+  DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\UI.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  OBJECT_DIR = CMakeFiles\OpenGLGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
+  TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
+
+build CMakeFiles/OpenGLGame.dir/Template/mariam/Menus.cpp.obj: CXX_COMPILER__OpenGLGame_unscanned_Debug C$:/Users/user/Downloads/lab$ 2$ template$ final/Template/mariam/Menus.cpp || cmake_object_order_depends_target_OpenGLGame
+  CONFIG = Debug
+  DEFINES = -DGLFW_DLL
+  DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\Menus.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  OBJECT_DIR = CMakeFiles\OpenGLGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
+  TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
+
+build CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj: CXX_COMPILER__OpenGLGame_unscanned_Debug C$:/Users/user/Downloads/lab$ 2$ template$ final/Template/mariam/Cutscene.cpp || cmake_object_order_depends_target_OpenGLGame
+  CONFIG = Debug
+  DEFINES = -DGLFW_DLL
+  DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\Cutscene.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  OBJECT_DIR = CMakeFiles\OpenGLGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
 
 
@@ -157,7 +197,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj: CXX_COMPILER__OpenGLGame
 #############################################
 # Link the executable OpenGLGame.exe
 
-build OpenGLGame.exe: CXX_EXECUTABLE_LINKER__OpenGLGame_Debug CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj | C$:/msys64/ucrt64/lib/libglfw3.dll.a
+build OpenGLGame.exe: CXX_EXECUTABLE_LINKER__OpenGLGame_Debug CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Environment.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Menus.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj | C$:/msys64/ucrt64/lib/libglfw3.dll.a
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/msys64/ucrt64/lib/libglfw3.dll.a  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

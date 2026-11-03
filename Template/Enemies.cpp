@@ -16,7 +16,7 @@ void spawnEasyEnemy() {
 			enemies[i].x = .90f;
 			enemies[i].health = 5;
 			enemies[i].maxHealth = 5;
-			enemies[i].attackTime = 1.8f;
+			enemies[i].attackTime = 3.0f;
 			enemies[i].movementBlocked = false;
 			return;
 		}
@@ -31,7 +31,7 @@ void spawnMediumEnemy() {
             enemies[i].x = .90f;
             enemies[i].health = 5;
             enemies[i].maxHealth = 5;
-            enemies[i].attackTime = 1.8f;
+            enemies[i].attackTime = 3.0f;
             enemies[i].movementBlocked = false;
             return;
 

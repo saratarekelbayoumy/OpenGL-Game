@@ -64,7 +64,7 @@ void updateEnemyAttacks(float dt) {
         if (enemies[i].type != EASY && enemies[i].type != MEDIUM)
             continue;
         enemies[i].attackTime += dt;
-        if (enemies[i].attackTime >= 1.8f) {
+        if (enemies[i].attackTime >= 3.0f) {
             if (enemies[i].type == EASY) {
             spawnEnemyProjectile(enemies[i].lane, enemies[i].x, HIGH_ATTACK);
         }

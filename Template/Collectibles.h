@@ -4,7 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 const int MAX_COLLECTIBLES = 30;
-const int COLLECTIBLE_VALUE = 5;
+const int COLLECTIBLE_VALUE = 10;
 
 struct Collectible {
     bool active;

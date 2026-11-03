@@ -46,7 +46,7 @@ void resetGame(){
     for (int i = 0; i< MAX_PLAYERS;i++)
     players[i] = Player{};
 
-    coins =60;
+    coins =100;
      meleePurchased = 0;
     gameTime=0;
     cutsceneTime = 0;

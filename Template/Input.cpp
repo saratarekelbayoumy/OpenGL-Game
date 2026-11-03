@@ -69,7 +69,8 @@ void refreshHover() {
 
     if (currentScreen == PLAYING) {
         hoveredLane =getLane(mouseX, mouseY);
-        if (coins >= PLAYER_COST)
+        int card = getCard(mouseX, mouseY);
+        if (coins >= getPlayerCost(card))
             hoveredCard =getCard(mouseX, mouseY);
     }} 
 
@@ -181,29 +182,7 @@ if (key ==GLFW_KEY_ESCAPE) {
         return;
     }
 
-    // temp for testing 
-    if (key == GLFW_KEY_H || key == GLFW_KEY_B) {
-        for (int i = 0; i < MAX_PLAYERS; i++) {
 
-            if (!players[i].active ||
-                !selectedLanes[players[i].lane])
-            {
-                continue;
-            }
-
-            if (key == GLFW_KEY_H) {
-                damagePlayer(i, 1);
-            }
-            else if (players[i].type != DEFENSE) {
-
-                setPlayerMovementBlocked(
-                    i,
-                    !players[i].movementBlocked
-                );
-            }
-        }
-
-        return; } 
 
     bool jumpKey = (key == GLFW_KEY_W  || key==GLFW_KEY_UP);
     bool duckKey = (key == GLFW_KEY_S || key ==GLFW_KEY_DOWN);

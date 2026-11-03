@@ -121,7 +121,7 @@ void drawGameplay(GLint locTransform, GLint locTint){
         drawText(
             locTransform, locTint, "COINS",cardX[type]+ .035f, .705f, .004f,.95f, .85f, .45f );
 
-            std::string priceText = std::to_string(PLAYER_COST);
+            std::string priceText = std::to_string(getPlayerCost(type));
             float priceScale =.22f;
 
             for(int position = 0; position < (int)priceText.size(); position++) {

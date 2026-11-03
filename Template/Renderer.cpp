@@ -243,8 +243,9 @@ void drawCards(const Renderer& renderer){
     drawRectangle(renderer, identity, 0.0f, 0.8f, 2.0f, 0.3f, 0.0f, 0.20f, 0.23f, 0.30f);
     for(int type = 0; type < 3; type++){
         float red, green, blue;
+        int cost = getPlayerCost(type);
 
-        if(coins < PLAYER_COST) {
+        if(coins < cost) {
             red = 0.35f;
             green = 0.35f;
             blue = 0.35f;
@@ -380,13 +381,15 @@ void drawPlayers(const Renderer& renderer) {
         float damageScale = 1.0f;
         float attackProgress = 0.0f;
         bool grayscale = false;
+        
 
         if(object < 3){
             type = object;
+            int cost = getPlayerCost(type);
             x = cardX[type];
             feetY = 0.71f;
 
-            grayscale = coins < PLAYER_COST;
+            grayscale = coins < cost;
         }
 
         else{

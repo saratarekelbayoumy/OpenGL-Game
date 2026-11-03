@@ -14,6 +14,8 @@ const int RANGED = 1;
 const int DEFENSE = 2;
 const int MAX_PLAYERS = 50;
 const int PLAYER_COST = 10;
+const int LONG_RANGE_COST = PLAYER_COST * 2;
+const int DEFENSE_COST = PLAYER_COST * 3;
 const float JUMP_DURATION = 0.6f;
 const float JUMP_HEIGHT = 0.15f;
 const float DUCK_DURATION = 0.5f;
@@ -55,5 +57,6 @@ void damagePlayer(int playerIndex, int damage);
 void setPlayerMovementBlocked(int playerIndex, bool blocked);
 void updatePlayers(float deltaTime);
 void printPlayerAttacks();
+int getPlayerCost(int type);
 
 

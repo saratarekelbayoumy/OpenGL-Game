@@ -46,7 +46,7 @@ void resetGame(){
     for (int i = 0; i< MAX_PLAYERS;i++)
     players[i] = Player{};
 
-    coins =30;
+    coins =60;
      meleePurchased = 0;
     gameTime=0;
     cutsceneTime = 0;
@@ -87,6 +87,7 @@ void resetGame(){
         currentScreen = MAIN_MENU;
         refreshHover();
         updateWindowTitle(window);
+
  }
 
  void finishGame(GLFWwindow* window,bool won)

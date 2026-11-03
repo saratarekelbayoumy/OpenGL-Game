@@ -9,12 +9,27 @@ float cardX[3] = { -0.7f, -0.3f, 0.1f };
 int hoveredLane = -1;
 int hoveredCard = -1;
 int placementLane = -1;
-int coins = 30;
+int coins = 60;
 int meleePurchased = 0;
 bool selectedLanes[3] = { false, false, false };
 int selectionOrder[3] = { 0, 0, 0};
 int selectionCounter = 0;
 Player players[MAX_PLAYERS] = {};
+
+
+
+int getPlayerCost(int type) {
+    switch (type) {
+        case MELEE:
+            return PLAYER_COST;
+        case RANGED:
+            return LONG_RANGE_COST;
+        case DEFENSE:
+            return DEFENSE_COST;
+        default:
+            return 0; 
+    }
+}
 
 void updatePlacementLane(){
     placementLane = -1;
@@ -27,19 +42,19 @@ void updatePlacementLane(){
     }
 }
 
-void updateWindowTitle(GLFWwindow* window)
-{
-    std::string title =
-        "Castle Gate Defenders | Coins: " +
-        std::to_string(coins) +
-        " | Test cost: 10 each" +
-        " | W/S: dodge | H: damage | B: block";
-
+void updateWindowTitle(GLFWwindow* window) {
+    std::string title = "Castle Gate Defenders";
     glfwSetWindowTitle(window, title.c_str());
 }
 
 void placePlayer(GLFWwindow* window, int type){
-    if (type < MELEE || type > DEFENSE || coins < PLAYER_COST) {
+    if (type < MELEE || type > DEFENSE) {
+        return;
+    }
+
+    int cost = getPlayerCost(type);
+    if(coins < cost) {
+        std::cout << "Not enough coins to place this player.\n";
         return;
     }
 
@@ -68,7 +83,7 @@ void placePlayer(GLFWwindow* window, int type){
             players[i].movementBlocked = false;
             players[i].firstAttackPending = type != DEFENSE;
             players[i].attacksThisFrame = 0;
-            coins -= PLAYER_COST;
+            coins -= cost;
 
             if(type == MELEE && meleePurchased < 3){
                 meleePurchased++;

@@ -15,6 +15,7 @@ bool selectedLanes[3] = { false, false, false };
 int selectionOrder[3] = { 0, 0, 0};
 int selectionCounter = 0;
 Player players[MAX_PLAYERS] = {};
+bool placingDefense = false;
 
 
 
@@ -47,7 +48,7 @@ void updateWindowTitle(GLFWwindow* window) {
     glfwSetWindowTitle(window, title.c_str());
 }
 
-void placePlayer(GLFWwindow* window, int type){
+void placePlayer(GLFWwindow* window, int type, float positionX) {
     if (type < MELEE || type > DEFENSE) {
         return;
     }
@@ -73,7 +74,7 @@ void placePlayer(GLFWwindow* window, int type){
             players[i].active = true;
             players[i].type = type;
             players[i].lane = placementLane;
-            players[i].x = -0.60f;
+            players[i].x = (type == DEFENSE) ? positionX : -0.6f;
             players[i].maxHealth = type == DEFENSE ? 7 : 5;
             players[i].health = players[i].maxHealth;
             players[i].jumping = false;

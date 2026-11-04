@@ -73,6 +73,96 @@ ModelPart cutsceneRaiderParts[] = {
               drawRectangle(locTransform, locTint, identity, 0,-.66f,2,.68f,.32f,.36f,.29f);
               drawRectangle(locTransform, locTint, identity, 0,-.43f,2,.025f,.55f,.56f,.49f);
 
+
+               // bottom path  
+                      drawRectangle(locTransform, locTint, identity,.10f, -.72f, 1.60f,.56f,.46f,.49f,.55f);
+
+        for (int row =0; row <7; row++) {
+            for (int column =0; column < 12; column++) {
+                float left = -.70f + column * .14f;
+
+                if (row == 1)
+                left -= .07f;
+
+                float right = left + .13f;
+
+                if (left < -.70f) left = -.70f;
+                if (right > .90f) right = .90f;
+                if (right <=left) continue;
+
+                bool light = (row + column) % 2 != 0;
+
+                drawRectangle(locTransform, locTint, identity, (left + right) * .5f, -.95f + row * .083f, 
+                right - left, .075f,
+                light? .51f : .46f,
+                light ? .54f : .49f,
+                light? .60f : .55f);
+        }
+    }
+
+    for (int cap = 0; cap < 10; cap++) {
+        drawRectangle(locTransform,locTint,identity,-.62f + cap * .16f, -.455f, .153f, .026f, .66f, .69f ,.74f);
+
+    }
+
+        //decoration
+          for (int decoration = 0; decoration <9; decoration++) {
+        ModelPart* parts;
+        int count;
+        float x;
+
+        if (decoration <2) {
+            parts = bannerParts;
+            count = sizeof(bannerParts) / sizeof(bannerParts[0]);   
+        x = decoration == 0 ? -.55f : .62f;
+        }
+
+        else if (decoration < 4) {
+            parts = torchParts;
+            count = sizeof(torchParts) / sizeof(torchParts[0]);
+            x = decoration == 2 ? -.68f : .85f; }
+        else if (decoration < 6) {
+            parts = crateParts;
+            count = sizeof(crateParts) / sizeof(crateParts[0]);
+            x = decoration == 4 ? -.30f : .20f;
+        }
+        else {
+            parts = bushParts;
+            count = sizeof(bushParts) / sizeof(bushParts[0]);
+            x = decoration == 6 ? -.10f : decoration == 7 ? .43f : .78f;
+        }
+
+
+             float decorationY=(decoration<4) ? -.69f : -.88f;
+
+       glm::mat4 parent= glm::translate(identity,glm::vec3(x,decorationY,0));
+
+        drawParts(locTransform, locTint, parent, parts, count);
+
+        if (decoration == 2 || decoration == 3) {
+
+            float phase = cutsceneTime * 7 + decoration;
+            float height = .050f + .010f * (float)std::sin(phase);
+            float width = .028f + .004f * (float)std::sin(phase +1);
+            float lean = 8 * (float)std::sin(phase * .70f);
+
+            glm::mat4 flame = glm::translate(parent, glm::vec3(.025f, .145f,0));
+
+            flame = glm ::rotate (flame, glm:: radians(lean) ,glm::vec3(0,0,1));
+
+            drawRectangle(locTransform, locTint, flame, 0,height * .5f, width, height, 1,.38f,.08f);
+
+            drawRectangle(locTransform, locTint, flame, 0,height * .30f, width * .50f, height * .60f, 1,.80f,.20f); 
+        }
+    }
+
+                  
+
+
+
+
+
+
               glm::mat4 castle = glm::translate(identity, glm::vec3(-.83f, -.05f,0));
               castle = glm::scale(castle, glm::vec3(1.2f,.57f,1));
 
@@ -86,11 +176,7 @@ ModelPart cutsceneRaiderParts[] = {
                     }
                 }
 
-                glm::mat4 crate = glm::translate(identity, glm::vec3(-.60f, -.66f, 0));
-                drawParts(locTransform, locTint, crate, crateParts, sizeof(crateParts)/sizeof(crateParts[0]));
-                glm::mat4 bush = glm::translate(identity, glm::vec3(.79f,-.66f,0));
                 
-                drawParts(locTransform, locTint, bush, bushParts, sizeof(bushParts)/sizeof(bushParts[0]));
 
                 float knightX = -.50f;
                 float knightY = -.43f;
@@ -161,6 +247,3 @@ ModelPart cutsceneRaiderParts[] = {
                                 drawText(locTransform, locTint, "HOLD THE LANES AND PROTECT THE CASTLE",0,.60f,.008f,.92f,.94f,.97f);
                             }
                             }
-                        
-                     
-

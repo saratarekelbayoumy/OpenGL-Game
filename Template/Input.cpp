@@ -50,8 +50,9 @@ int getCard(float mouseX, float mouseY) {
     }
 
     for (int i = 0; i < 3; ++i) {
+        int cost = getPlayerCost(i);
 
-         if(coins < PLAYER_COST || (i != MELEE && meleePurchased <3))
+        if(coins<0 ||coins < cost || (i != MELEE && meleePurchased <3))
         continue;
         if (mouseX >= cardX[i] - 0.15f && mouseX <= cardX[i] + 0.15f) {
             return i;
@@ -135,15 +136,34 @@ if (currentScreen==PAUSED){
 if (currentScreen !=PLAYING) {
     return;}
     
-
-
-if (currentScreen != PLAYING) {
+if (placingDefense) {
+    int clickedLane = getLane(mouseX, mouseY);
+    if (clickedLane != -1) {
+        int previousLane = placementLane;
+        placementLane = clickedLane;
+        placePlayer(window, DEFENSE, mouseX);
+        placementLane = previousLane;
+        placingDefense = false;
+        refreshHover();
+        updateWindowTitle(window);
+    }
     return;
 }
 
+
+
     int card = getCard(mouseX, mouseY);
     if (card != -1){
-        placePlayer(window, card);
+        if (card == DEFENSE){
+            if (coins >= getPlayerCost(DEFENSE)) {
+                placingDefense = true;
+                refreshHover();
+                updateWindowTitle(window);
+            }
+        }
+        else {
+            placePlayer(window, card, -0.6f);
+        }
         return;
     }
 

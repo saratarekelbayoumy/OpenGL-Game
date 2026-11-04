@@ -31,6 +31,7 @@ extern bool selectedLanes[3];
 extern int selectionOrder[3];
 extern int selectionCounter;
 extern int meleePurchased;
+extern bool placingDefense;
 
 struct Player {
     bool active;
@@ -50,7 +51,7 @@ struct Player {
 
 extern Player players[MAX_PLAYERS];
 
-void placePlayer(GLFWwindow* window, int type);
+void placePlayer(GLFWwindow* window, int type, float positionX);
 void updateWindowTitle(GLFWwindow* window);
 void updatePlacementLane();
 void damagePlayer(int playerIndex, int damage);
@@ -58,5 +59,6 @@ void setPlayerMovementBlocked(int playerIndex, bool blocked);
 void updatePlayers(float deltaTime);
 void printPlayerAttacks();
 int getPlayerCost(int type);
+
 
 

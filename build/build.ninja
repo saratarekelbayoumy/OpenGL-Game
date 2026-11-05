@@ -54,7 +54,7 @@ build CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj: CXX_COMPILER__OpenGLGame_
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -64,7 +64,7 @@ build CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj: C_COMPILER__OpenGLGame_
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\src\glad.c.obj.d
   FLAGS = -g
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\src
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -74,7 +74,7 @@ build CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj: CXX_COMPILER__OpenGL
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\GameState.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -84,7 +84,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj: CXX_COMPILER__OpenGLGame
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Input.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -94,7 +94,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj: CXX_COMPILER__OpenGLG
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Renderer.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -104,7 +104,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj: CXX_COMPILER__OpenGLGa
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Enemies.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -114,7 +114,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj: CXX_COMPILER__OpenGLGam
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Combat.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -124,7 +124,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj: CXX_COMPILER__Open
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Projectiles.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -134,7 +134,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj: CXX_COMPILER__Ope
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Collectibles.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -144,7 +144,7 @@ build CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj: CXX_COMPILER__OpenGLGame
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\Waves.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -154,7 +154,7 @@ build CMakeFiles/OpenGLGame.dir/Template/mariam/Environment.cpp.obj: CXX_COMPILE
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\Environment.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -164,7 +164,7 @@ build CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj: CXX_COMPILER__OpenGL
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\UI.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -174,7 +174,7 @@ build CMakeFiles/OpenGLGame.dir/Template/mariam/Menus.cpp.obj: CXX_COMPILER__Ope
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\Menus.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -184,7 +184,7 @@ build CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj: CXX_COMPILER__
   DEFINES = -DGLFW_DLL
   DEP_FILE = CMakeFiles\OpenGLGame.dir\Template\mariam\Cutscene.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+  INCLUDES = -I"C:/Users/user/Downloads/lab 2 template final" -I"C:/Users/user/Downloads/lab 2 template final/Template" -I"C:/Users/user/Downloads/lab 2 template final/Template/include" -I"C:/Users/user/Downloads/lab 2 template final/Template/External/include" -isystem C:/msys64/ucrt64/include/freetype2
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLGame.dir\Template\mariam
   TARGET_SUPPORT_DIR = CMakeFiles\OpenGLGame.dir
@@ -197,10 +197,10 @@ build CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable OpenGLGame.exe
 
-build OpenGLGame.exe: CXX_EXECUTABLE_LINKER__OpenGLGame_Debug CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Environment.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Menus.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj | C$:/msys64/ucrt64/lib/libglfw3.dll.a
+build OpenGLGame.exe: CXX_EXECUTABLE_LINKER__OpenGLGame_Debug CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Environment.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Menus.cpp.obj CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj | C$:/msys64/ucrt64/lib/libglfw3.dll.a C$:/msys64/ucrt64/lib/libfreetype.dll.a
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = C:/msys64/ucrt64/lib/libglfw3.dll.a  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/msys64/ucrt64/lib/libglfw3.dll.a  -lopengl32  C:/msys64/ucrt64/lib/libfreetype.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\OpenGLGame.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -254,14 +254,14 @@ build all: phony OpenGLGame.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/user/Downloads/lab$ 2$ template$ final/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/user/Downloads/lab$ 2$ template$ final/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Config.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets-release.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.4.4/CMakeCCompiler.cmake CMakeFiles/4.4.4/CMakeCXXCompiler.cmake CMakeFiles/4.4.4/CMakeRCCompiler.cmake CMakeFiles/4.4.4/CMakeSystem.cmake
+build build.ninja C$:/Users/user/Downloads/lab$ 2$ template$ final/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/user/Downloads/lab$ 2$ template$ final/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Config.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets-release.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindFreetype.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.4.4/CMakeCCompiler.cmake CMakeFiles/4.4.4/CMakeCXXCompiler.cmake CMakeFiles/4.4.4/CMakeRCCompiler.cmake CMakeFiles/4.4.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/user/Downloads/lab$ 2$ template$ final/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Config.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets-release.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.4.4/CMakeCCompiler.cmake CMakeFiles/4.4.4/CMakeCXXCompiler.cmake CMakeFiles/4.4.4/CMakeRCCompiler.cmake CMakeFiles/4.4.4/CMakeSystem.cmake: phony
+build C$:/Users/user/Downloads/lab$ 2$ template$ final/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Config.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets-release.cmake C$:/msys64/ucrt64/lib/cmake/glfw3/glfw3Targets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindFreetype.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/4.4.4/CMakeCCompiler.cmake CMakeFiles/4.4.4/CMakeCXXCompiler.cmake CMakeFiles/4.4.4/CMakeRCCompiler.cmake CMakeFiles/4.4.4/CMakeSystem.cmake: phony
 
 
 #############################################

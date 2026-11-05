@@ -231,6 +231,26 @@
 			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake"
 		},
 		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindFreetype.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake"
+		},
+		{
 			"isExternal" : true,
 			"path" : "C:/msys64/ucrt64/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
 		},

@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 41,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 35,
+				"line" : 37,
 				"parent" : 0
 			}
 		]
@@ -60,6 +60,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "OpenGL::GL::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Freetype::Freetype::@6890427a1f51a3e7e1df"
 		}
 	],
 	"compileGroups" : 
@@ -95,6 +99,11 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/msys64/ucrt64/include/freetype2"
 				}
 			],
 			"language" : "CXX",
@@ -154,6 +163,11 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/user/Downloads/lab 2 template final/Template/External/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/msys64/ucrt64/include/freetype2"
 				}
 			],
 			"language" : "C",
@@ -183,6 +197,11 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "C:\\msys64\\ucrt64\\lib\\libfreetype.dll.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
@@ -198,6 +217,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "OpenGL::GL::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Freetype::Freetype::@6890427a1f51a3e7e1df"
 		}
 	],
 	"name" : "OpenGLGame",

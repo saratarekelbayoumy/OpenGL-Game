@@ -41,7 +41,7 @@ ModelPart meleeParts[] = {
 };
 
 
-// Ranged character model
+
 ModelPart rangedParts[] = {
     // Quiver and arrows
     {-0.054f, 0.101f, 0.027f, 0.072f, -15, 0.45f, 0.27f, 0.13f},
@@ -71,7 +71,7 @@ ModelPart rangedParts[] = {
 };
 
 
-// Defense character model
+
 ModelPart defenseParts[] = {
     // Legs and boots
     {-0.028f, 0.036f, 0.033f, 0.052f, 0, 0.42f, 0.45f, 0.53f},

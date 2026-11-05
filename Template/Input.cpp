@@ -3,11 +3,11 @@
 #include "GameState.h"
 #include "mariam/Menus.h"
 #include "mariam/Cutscene.h"
-#include "Audio.h"
 
 
 
-// Function to get the mouse position in normalized device coordinates
+
+
 bool getMousePosition(GLFWwindow* window, double xpos, double ypos, float& mouseX, float& mouseY) {
     int width, height;
     glfwGetWindowSize(window, &width, &height);
@@ -106,11 +106,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
     }
 
    
-    else if (insideButton(mouseX, mouseY, -0.20f)) {
-        currentScreen = SOUND_SETTINGS;
-        refreshHover();
-        updateWindowTitle(window);
-    }
+   
 
     
     else if (insideButton(mouseX, mouseY, -0.40f)) {
@@ -120,39 +116,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
     return;
 }
 
-    if (currentScreen == SOUND_SETTINGS) {
 
-    
-    if (insideButton(mouseX, mouseY, 0.20f)) {
-        soundVolume += 0.1f;
-
-        if (soundVolume > 1.0f)
-            soundVolume = 1.0f;
-    }
-
-   
-    else if (insideButton(mouseX, mouseY, 0.01f)) {
-        soundVolume -= 0.1f;
-
-        if (soundVolume < 0.0f)
-            soundVolume = 0.0f;
-    }
-
-   
-    else if (insideButton(mouseX, mouseY, -0.18f)) {
-        soundMuted = !soundMuted;
-    }
-
-  
-    else if (insideButton(mouseX, mouseY, -0.37f)) {
-        currentScreen = MAIN_MENU;
-        refreshHover();
-        updateWindowTitle(window);
-    }
-
-    setAudioVolume(soundVolume, soundMuted);
-
-    return;}
 
 
 

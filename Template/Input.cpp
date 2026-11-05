@@ -44,7 +44,7 @@ int getLane(float mouseX, float mouseY) {
 }
 
 
-//determines which card is being hovered over based on the mouse position
+
 int getCard(float mouseX, float mouseY) {
     if (mouseY < 0.68f || mouseY > 0.92f) {
         return -1; 

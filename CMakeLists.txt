@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(OpenGL REQUIRED)
+find_package(Freetype REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
 
 add_executable(OpenGLGame
@@ -41,4 +42,5 @@ target_include_directories(OpenGLGame PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
 target_link_libraries(OpenGLGame PRIVATE
     glfw
     OpenGL::GL
+     Freetype::Freetype
 )

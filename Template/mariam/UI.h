@@ -1,6 +1,8 @@
 #pragma once
 
 #include "GameShared.h"
+bool initTextRenderer();
+void destroyTextRenderer();
 
 void drawText(
     GLint locTransform,

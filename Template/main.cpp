@@ -1,3 +1,4 @@
+#include "mariam/UI.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -51,6 +52,20 @@ int main()
         glfwTerminate();
         return -1;
     }
+
+glEnable(GL_BLEND);
+glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+if (!initTextRenderer()) {
+    std::cerr << "Failed to initialize text renderer\n";
+
+    destroyRenderer(renderer);
+    glfwDestroyWindow(window);
+    glfwTerminate();
+    return -1;
+}
+
+
 
     float lastFrame = (float)glfwGetTime();
 
@@ -113,7 +128,7 @@ if (currentScreen ==MAIN_MENU || currentScreen ==CUTSCENE) {
         glfwPollEvents();
       
     }
-
+      destroyTextRenderer();
     destroyRenderer(renderer);
     glfwDestroyWindow(window);
     glfwTerminate();

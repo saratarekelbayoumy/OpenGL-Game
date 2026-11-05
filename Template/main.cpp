@@ -98,13 +98,13 @@ if (!initTextRenderer()) {
       }
         drawScene(renderer);
         
-if (currentScreen ==MAIN_MENU || currentScreen ==CUTSCENE) {
+if (currentScreen ==MAIN_MENU || currentScreen ==CUTSCENE || currentScreen ==SOUND_SETTINGS) {
 
     glClearColor(0.1f,0.1f,0.15f,1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(renderer.shaderProgram);
     glBindVertexArray(renderer.VAO);
-    if (currentScreen == MAIN_MENU) {
+    if (currentScreen == MAIN_MENU || currentScreen == SOUND_SETTINGS) {
         drawMenu(renderer.locTransform, renderer.locTint);}
     else {
         drawCutscene(renderer.locTransform, renderer.locTint);
@@ -116,8 +116,8 @@ if (currentScreen ==MAIN_MENU || currentScreen ==CUTSCENE) {
     drawCollectible(renderer.locTransform, renderer.locTint);
 
     if (currentScreen ==PAUSED ||
-        currentScreen ==WIN ||
-        currentScreen ==LOSE) {
+    currentScreen ==WIN ||
+    currentScreen ==LOSE ) {
 
         drawMenu(renderer.locTransform, renderer.locTint);
     }}

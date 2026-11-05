@@ -10,6 +10,8 @@ float gameTime =0.0f;
 float cutsceneTime =0.0f;
 float mouseX =-2.0f;
 float mouseY =-2.0f;
+float soundVolume = 1.0f;
+bool soundMuted = false;
 
 bool insideButton(float x, float y, float centerY){
     return x >= -.32f && x<= .32f && y >= centerY - .08f && y <= centerY+ .08f;
@@ -123,9 +125,35 @@ if (currentScreen == MAIN_MENU) {
         0,.20,.014f,.90f,.92f,.96f
     );
 
-    drawButton(locTransform, locTint ,"START", .02f);
-    drawButton(locTransform, locTint ,"EXIT", -.20f);
+   drawButton(locTransform, locTint, "START",.02f);
+drawButton(locTransform, locTint, "SOUND SETTINGS",-.20f);
+drawButton(locTransform, locTint, "EXIT",-.40f);
 }
+
+else if (currentScreen == SOUND_SETTINGS) {
+
+    drawText(
+        locTransform, locTint, "SOUND SETTINGS", 0,.42f,.014f,    .95f, .80f, .40f);
+
+    drawButton(locTransform, locTint, "VOLUME +",.20f);
+   float displayedVolume = soundMuted ? 0.0f : soundVolume;
+
+std::string volumeText = "VOLUME: " +
+    std::to_string((int)(displayedVolume * 100.0f + 0.5f)) + "%";
+
+drawText(
+    locTransform, locTint,
+    volumeText,
+    0, .32f, .006f,
+    .95f, .93f, .85f
+);
+    drawButton(locTransform, locTint, "VOLUME -",.01f);
+drawButton( locTransform, locTint,  soundMuted ? "UNMUTE" : "MUTE", -.18f);
+
+
+    drawButton(locTransform, locTint, "BACK",-.37f);}
+
+
 
 else if (currentScreen == PAUSED){
     drawText(

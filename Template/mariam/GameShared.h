@@ -13,7 +13,7 @@ const int PAUSED =2;
 const int WIN =3;
 const int LOSE =4;
 const int CUTSCENE =5;
-
+const int SOUND_SETTINGS = 6;
 const float CUTSCENE_DURATION = 16.0f;
 
 

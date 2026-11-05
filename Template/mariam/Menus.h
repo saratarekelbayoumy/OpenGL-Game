@@ -1,6 +1,7 @@
 #pragma once
 #include "GameShared.h"
-
+extern float soundVolume;
+extern bool soundMuted;
 bool insideButton(float x, float y, float centerY);
 
 void drawButton(

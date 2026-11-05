@@ -13,6 +13,10 @@
 #include "mariam/GameShared.h"
 #include "mariam/Menus.h"
 #include "mariam/Cutscene.h"
+#include "Audio.h" 
+#include "mariam/Menus.h"
+
+
 
 int main()
 {
@@ -65,7 +69,12 @@ if (!initTextRenderer()) {
     return -1;
 }
 
-
+// initialize shared audio engine
+if (initAudio()) {
+    setAudioVolume(soundVolume, soundMuted);
+} else {
+    std::cerr << "Audio unavailable; continuing without sound.\n";
+}
 
     float lastFrame = (float)glfwGetTime();
 
@@ -128,6 +137,9 @@ if (currentScreen ==MAIN_MENU || currentScreen ==CUTSCENE || currentScreen ==SOU
         glfwPollEvents();
       
     }
+
+
+    shutdownAudio();
       destroyTextRenderer();
     destroyRenderer(renderer);
     glfwDestroyWindow(window);

@@ -12,6 +12,7 @@ find_package(glfw3 CONFIG REQUIRED)
 
 add_executable(OpenGLGame
     Template/main.cpp
+    Template/Audio.cpp
     Template/src/glad.c
         Template/GameState.cpp
     Template/Input.cpp

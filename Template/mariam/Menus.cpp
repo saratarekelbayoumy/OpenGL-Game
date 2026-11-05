@@ -4,6 +4,7 @@
 #include "Template/Projectiles.h"
 #include "Template/Collectibles.h"
 #include "Template/Waves.h"
+#include "../Audio.h"
 
 int currentScreen = MAIN_MENU;
 float gameTime =0.0f;
@@ -97,6 +98,7 @@ void resetGame(){
     if (currentScreen != PLAYING) return;
 
     currentScreen = won ? WIN : LOSE;
+    playSound(won ? "audio/victory.wav" : "audio/defeat.wav");
     for (int i = 0; i< MAX_PLAYERS;i++)
     players[i].attacksThisFrame =0;
 

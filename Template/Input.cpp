@@ -3,6 +3,7 @@
 #include "GameState.h"
 #include "mariam/Menus.h"
 #include "mariam/Cutscene.h"
+#include "Audio.h"
 
 
 
@@ -121,7 +122,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
     if (currentScreen == SOUND_SETTINGS) {
 
-    // VOLUME +
+    
     if (insideButton(mouseX, mouseY, 0.20f)) {
         soundVolume += 0.1f;
 
@@ -129,7 +130,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
             soundVolume = 1.0f;
     }
 
-    // VOLUME -
+   
     else if (insideButton(mouseX, mouseY, 0.01f)) {
         soundVolume -= 0.1f;
 
@@ -137,20 +138,22 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
             soundVolume = 0.0f;
     }
 
-    // MUTE / UNMUTE
+   
     else if (insideButton(mouseX, mouseY, -0.18f)) {
         soundMuted = !soundMuted;
     }
 
-    // BACK
+  
     else if (insideButton(mouseX, mouseY, -0.37f)) {
         currentScreen = MAIN_MENU;
         refreshHover();
         updateWindowTitle(window);
     }
 
-    return;
-}
+    setAudioVolume(soundVolume, soundMuted);
+
+    return;}
+
 
 
 if (currentScreen==PAUSED){

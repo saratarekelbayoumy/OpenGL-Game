@@ -1,11 +1,11 @@
 # ninja log v7
 92	4101	8155845670331365	CMakeFiles/OpenGLGame.dir/Template/src/glad.c.obj	80de9be7a3a515cf
 61	897	8155862436460423	CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj	d7fd62fac43ce816
-53	351	8155876623527356	OpenGLGame.exe	7d4fa4c0494ffd88
-75	713	8156216806824811	build.ninja	2d14cc61d7d38bc2
-75	713	8156216806748931	C:/Users/user/Downloads/lab 2 template final/build/cmake_install.cmake	2d14cc61d7d38bc2
+559	861	8156221163650726	OpenGLGame.exe	7d4fa4c0494ffd88
+75	713	8156713443834063	build.ninja	2d14cc61d7d38bc2
+75	713	8156713443764038	C:/Users/user/Downloads/lab 2 template final/build/cmake_install.cmake	2d14cc61d7d38bc2
 8	723	8155864906718107	CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj	56e5f496739738d4
-104	1577	8155845670451353	CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj	8fe33da85a00e7f9
+33	558	8156221158388323	CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj	8fe33da85a00e7f9
 80	1204	8155861292733638	CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj	116bc30bfc879d08
 146	1850	8155845670871364	CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj	665f90799598c01
 155	2025	8155845670961469	CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj	b46171a7dffbf37c
@@ -17,7 +17,20 @@
 1578	2908	8155845685194643	CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj	4c689241a15879bb
 182	2914	8155845671236664	CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj	621b4905e7846b80
 75	10899	8155845670161347	CMakeFiles/OpenGLGame.dir/Template/Audio.cpp.obj	5a1b676cf3470b5d
-19	1219	8156220554267590	CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj	8fe33da85a00e7f9
-1220	1941	8156220566271912	OpenGLGame.exe	7d4fa4c0494ffd88
-33	558	8156221158388323	CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj	8fe33da85a00e7f9
-559	861	8156221163650726	OpenGLGame.exe	7d4fa4c0494ffd88
+47	1478	8156714458751134	CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj	56e5f496739738d4
+56	2425	8156714458844245	CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj	621b4905e7846b80
+2425	3161	8156714482539475	OpenGLGame.exe	7d4fa4c0494ffd88
+173	5350	8156842792633472	CMakeFiles/OpenGLGame.dir/Template/GameState.cpp.obj	8fe33da85a00e7f9
+223	7083	8156842793120798	CMakeFiles/OpenGLGame.dir/Template/Combat.cpp.obj	8783ee37ad51582e
+258	7220	8156842793480748	CMakeFiles/OpenGLGame.dir/Template/Waves.cpp.obj	faee90b803314254
+188	7291	8156842792780820	CMakeFiles/OpenGLGame.dir/Template/Input.cpp.obj	56e5f496739738d4
+235	7291	8156842793250810	CMakeFiles/OpenGLGame.dir/Template/Projectiles.cpp.obj	665f90799598c01
+125	7357	8156842792144303	CMakeFiles/OpenGLGame.dir/Template/main.cpp.obj	d7fd62fac43ce816
+245	7378	8156842793341416	CMakeFiles/OpenGLGame.dir/Template/Collectibles.cpp.obj	b46171a7dffbf37c
+299	7389	8156842793886114	CMakeFiles/OpenGLGame.dir/Template/mariam/Menus.cpp.obj	d5b5bc63b5b8ebb3
+273	7416	8156842793631839	CMakeFiles/OpenGLGame.dir/Template/mariam/Environment.cpp.obj	b339f2972c33c0ae
+215	7437	8156842793050718	CMakeFiles/OpenGLGame.dir/Template/Enemies.cpp.obj	ede1a4f164168d94
+311	7480	8156842794006086	CMakeFiles/OpenGLGame.dir/Template/mariam/Cutscene.cpp.obj	4c689241a15879bb
+202	7875	8156842792920838	CMakeFiles/OpenGLGame.dir/Template/Renderer.cpp.obj	116bc30bfc879d08
+288	8810	8156842793776070	CMakeFiles/OpenGLGame.dir/Template/mariam/UI.cpp.obj	621b4905e7846b80
+8810	9715	8156842878999380	OpenGLGame.exe	7d4fa4c0494ffd88
